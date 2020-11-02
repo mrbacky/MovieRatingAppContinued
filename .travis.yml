@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 3.0
+solution: MovieRatingApp.sln
+script: # this is a comment
+ - dotnet restore
+ - dotnet build
+ - dotnet test MovieRatingApp.Core.Tests.MSTest.csproj
+ - dotnet test MovieRatingApp.Core.Tests.xUnit.csproj
